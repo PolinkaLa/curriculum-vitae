@@ -28,6 +28,10 @@ const telegramPosition = {
   right: "96px"
 }
 
+const linkStyle = {
+  color: "#fff"
+}
+
 const title = {
   name: "Лаппо Полина",
   jobTitle: "Frontend developer"
@@ -101,7 +105,16 @@ const workExperience = {
 
 const links = {
   title: "links",
-  description: [{}]
+  description: [{
+    title: "HeadHunter",
+    url: "https://spb.hh.ru/resume/711cdda6ff0516e4ec0039ed1f396a56574f64"
+  }, {
+    title: "Сертификат - JavaScript: The Advanced Concepts",
+    url: "https://www.udemy.com/certificate/UC-377e7d02-2fb3-46c6-b33d-f08de0377c6c/"
+  }, {
+    title: "Сертификат - TypeScript с нуля - от основ до advanced уровня",
+    url: "https://www.udemy.com/certificate/UC-53fbc370-486a-4c7a-a53b-8c6bdea4066e/"
+  }]
 }
 
 const skills = {
@@ -150,6 +163,12 @@ const IndexPage = () => {
         <h3 style={sectionStyles}><span style={blueColorStyle}>.</span>{languages.title}</h3>
         <p style={paddingLeft}><span style={blueColorStyle}>{languages.description[0].lang}:</span> {languages.description[0].level}</p>
         <p style={paddingLeft}><span style={blueColorStyle}>{languages.description[1].lang}:</span> {languages.description[1].level}</p>
+      </section>
+      <section style={paddingLeft}>
+        <h3 style={sectionStyles}><span style={blueColorStyle}>.</span>{links.title}</h3>
+        <p style={paddingLeft}><span style={blueColorStyle}>{links.description[0].title}:</span> <a target="_blank" style={linkStyle} href={links.description[0].url}>{links.description[0].url}</a></p>
+        <p style={paddingLeft}><span style={blueColorStyle}>{links.description[1].title}:</span> <a target="_blank" style={linkStyle} href={links.description[1].url}>{links.description[1].url}</a></p>
+        <p style={paddingLeft}><span style={blueColorStyle}>{links.description[2].title}:</span> <a target="_blank" style={linkStyle} href={links.description[2].url}>{links.description[2].url}</a></p>
       </section>
       <Tag tag="cv" open="false" />
     </main>
