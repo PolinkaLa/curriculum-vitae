@@ -2,8 +2,9 @@ import * as React from "react"
 
 const bracketStyles = {
     color: "#7de0df",
-    fontSize: "40px",
-    fontWeight: "bold"
+    fontSize: "50px",
+    fontWeight: "bold",
+    lineHeight: "150%"
 }
 
 const Bracket = (props: any) => {

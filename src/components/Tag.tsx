@@ -3,8 +3,9 @@ import Bracket from "./Bracket"
 
 const tagStyles = {
     color: "orange",
-    fontSize: "40px",
-    fontWeight: "bold"
+    fontSize: "50px",
+    fontWeight: "bold",
+    lineHeight: "150%"
 }
 
 const Tag = (props: any) => {
