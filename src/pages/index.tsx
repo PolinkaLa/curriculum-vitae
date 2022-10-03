@@ -170,9 +170,9 @@ const IndexPage = () => {
       </section>
       <section style={paddingLeft}>
         <h3 style={sectionStyles}><span style={blueColorStyle}>.</span>{links.title}</h3>
-        <p style={paddingLeft}><span style={blueColorStyle}>{links.description[0].title}:</span> <a target="_blank" style={linkStyle} href={links.description[0].url}>{links.description[0].url}</a></p>
-        <p style={paddingLeft}><span style={blueColorStyle}>{links.description[1].title}:</span> <a target="_blank" style={linkStyle} href={links.description[1].url}>{links.description[1].url}</a></p>
-        <p style={paddingLeft}><span style={blueColorStyle}>{links.description[2].title}:</span> <a target="_blank" style={linkStyle} href={links.description[2].url}>{links.description[2].url}</a></p>
+        <p style={paddingLeft}><a target="_blank" style={linkStyle} href={links.description[0].url}>{links.description[0].title}</a></p>
+        <p style={paddingLeft}><a target="_blank" style={linkStyle} href={links.description[1].url}>{links.description[1].title}</a></p>
+        <p style={paddingLeft}><a target="_blank" style={linkStyle} href={links.description[2].url}>{links.description[2].title}</a></p>
       </section>
       <Tag tag="cv" open="false" />
     </main>
