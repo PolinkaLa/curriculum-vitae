@@ -3,35 +3,6 @@ import type { HeadFC } from "gatsby"
 import Tag from "../components/Tag"
 import telegram from "../images/telegram.png"
 
-const pageStyles = {
-  color: "#fff",
-  padding: 96,
-  fontFamily: "Menlo, Monaco, 'Courier New', monospace",
-  backgroundColor: "#2a293b",
-  lineHeight: "150%"
-}
-
-const sectionStyles = {
-  color: "orange",
-  fontSize: "20px"
-}
-const blueColorStyle = {
-  color: "#7de0df",
-}
-const paddingLeft = {
-  paddingLeft: "40px"
-}
-
-const telegramPosition = {
-  position: "absolute",
-  top: "96px",
-  right: "96px"
-}
-
-const linkStyle = {
-  color: "#fff"
-}
-
 const title = {
   name: "Лаппо Полина",
   jobTitle: "Frontend developer"
@@ -124,55 +95,68 @@ const skills = {
 
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
+    <main className="pageStyles">
       <Tag tag="cv" open="true" />
-      <div style={paddingLeft}>
+      <div className="paddingLeft">
         <h1>{title.name}</h1>
         <p>{title.jobTitle}</p>
         <img src="https://avatars.githubusercontent.com/u/10922478?s=200" alt="Polina's photo"/>
-        <div style={telegramPosition}>
+        <div className="telegramPosition">
           <img src={telegram} alt="telegram qr code" width="150px"/><br/>
-          <a target="_blank" style={linkStyle} href="https://t.me/PaulinaLappo">@PaulinaLappo</a>
+          <a target="_blank" className="linkStyle" href="https://t.me/PaulinaLappo">@PaulinaLappo</a>
         </div>
-        
       </div>
-      <section style={paddingLeft}>
-        <h3 style={sectionStyles}><span style={blueColorStyle}>.</span>{aboutMe.title}</h3>
-        <p style={paddingLeft}>{aboutMe.description}</p>
+      <section className="paddingLeft">
+        <h3 className="sectionStyles"><span className="blueColorStyle">.</span>{aboutMe.title}</h3>
+        <p className="paddingLeft">{aboutMe.description}</p>
       </section>
-      <section style={paddingLeft}>
-        <h3 style={sectionStyles}><span style={blueColorStyle}>.</span>{workExperience.title}</h3>
-        <p style={paddingLeft}><span style={blueColorStyle}>{workExperience.description[0].period}:</span> {workExperience.description[0].title}, {workExperience.description[0].company}</p>
-        <p style={paddingLeft}><span style={blueColorStyle}>{workExperience.description[1].period}:</span> {workExperience.description[1].title}, {workExperience.description[0].company}</p>
-        <p style={paddingLeft}><span style={blueColorStyle}>{workExperience.description[2].period}:</span> {workExperience.description[2].title}, {workExperience.description[0].company}</p>
-        <p style={paddingLeft}><span style={blueColorStyle}>{workExperience.description[3].period}:</span> {workExperience.description[3].title}, {workExperience.description[0].company}</p>
+      <section className="paddingLeft">
+        <h3 className="sectionStyles"><span className="blueColorStyle">.</span>{workExperience.title}</h3>
+        {workExperience.description.map((value, index) => {
+          return <p className="paddingLeft" key={index}>
+            <span className="blueColorStyle">{value.period}: </span>
+            {value.title}, {value.company}
+          </p>
+        })}
       </section>
-      <section style={paddingLeft}>
-        <h3 style={sectionStyles}><span style={blueColorStyle}>.</span>{skills.title}</h3>
-        <p style={paddingLeft}>{skills.description}</p>
+      <section className="paddingLeft">
+        <h3 className="sectionStyles"><span className="blueColorStyle">.</span>{skills.title}</h3>
+        <p className="paddingLeft">{skills.description}</p>
       </section>
-      <section style={paddingLeft}>
-        <h3 style={sectionStyles}><span style={blueColorStyle}>.</span>{education.title}</h3>
-        <p style={paddingLeft}><span style={blueColorStyle}>{education.description[0].year}:</span> {education.description[0].name}</p>
-        <p style={paddingLeft}><span style={blueColorStyle}>{education.description[1].year}:</span> {education.description[1].name}</p>
+      <section className="paddingLeft">
+        <h3 className="sectionStyles"><span className="blueColorStyle">.</span>{education.title}</h3>
+        {education.description.map((value, index) => {
+          return <p className="paddingLeft" key={index}>
+            <span className="blueColorStyle">{value.year}: </span>
+            {value.name}
+          </p>
+        })}
       </section>
-      <section style={paddingLeft}>
-        <h3 style={sectionStyles}><span style={blueColorStyle}>.</span>{courses.title}</h3>
-        <p style={paddingLeft}><span style={blueColorStyle}>{courses.description[0].year}:</span> {courses.description[0].name}</p>
-        <p style={paddingLeft}><span style={blueColorStyle}>{courses.description[1].year}:</span> {courses.description[1].name}</p>
-        <p style={paddingLeft}><span style={blueColorStyle}>{courses.description[2].year}:</span> {courses.description[2].name}</p>
-        <p style={paddingLeft}><span style={blueColorStyle}>{courses.description[3].year}:</span> {courses.description[3].name}</p>
+      <section className="paddingLeft">
+        <h3 className="sectionStyles"><span className="blueColorStyle">.</span>{courses.title}</h3>
+        {courses.description.map((value, index) => {
+          return <p className="paddingLeft" key={index}>
+            <span className="blueColorStyle">{value.year}: </span>
+            {value.name}
+          </p>
+        })}
       </section>
-      <section style={paddingLeft}>
-        <h3 style={sectionStyles}><span style={blueColorStyle}>.</span>{languages.title}</h3>
-        <p style={paddingLeft}><span style={blueColorStyle}>{languages.description[0].lang}:</span> {languages.description[0].level}</p>
-        <p style={paddingLeft}><span style={blueColorStyle}>{languages.description[1].lang}:</span> {languages.description[1].level}</p>
+      <section className="paddingLeft">
+        <h3 className="sectionStyles"><span className="blueColorStyle">.</span>{languages.title}</h3>
+        {languages.description.map((value, index) => {
+          return <p className="paddingLeft" key={index}>
+            <span className="blueColorStyle">{value.lang}: </span>
+            {value.level}
+          </p>
+        })}
       </section>
-      <section style={paddingLeft}>
-        <h3 style={sectionStyles}><span style={blueColorStyle}>.</span>{links.title}</h3>
-        <p style={paddingLeft}><a target="_blank" style={linkStyle} href={links.description[0].url}>{links.description[0].title}</a></p>
-        <p style={paddingLeft}><a target="_blank" style={linkStyle} href={links.description[1].url}>{links.description[1].title}</a></p>
-        <p style={paddingLeft}><a target="_blank" style={linkStyle} href={links.description[2].url}>{links.description[2].title}</a></p>
+      <section className="paddingLeft">
+        <h3 className="sectionStyles"><span className="blueColorStyle">.</span>{links.title}</h3>
+        {links.description.map((value, index) => {
+          return <p className="paddingLeft" key={index}>
+            <a target="_blank" href={value.url} className="blueColorStyle">{value.title}</a>
+          </p>
+        })}
       </section>
       <Tag tag="cv" open="false" />
     </main>

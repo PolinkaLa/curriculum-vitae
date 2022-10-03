@@ -1,6 +1,37 @@
-html, 
+html,
 body,
 #___gatsby {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.pageStyles {
+  color: #fff;
+  padding: 96px;
+  font-family: "Menlo, Monaco, 'Courier New', monospace";
+  background-color: #2a293b;
+  line-height: 150%;
+}
+
+.sectionStyles {
+  color: orange;
+  font-size: 20px;
+}
+
+.blueColorStyle {
+  color: #7de0df;
+}
+
+.paddingLeft {
+  padding-left: 40px;
+}
+
+.telegramPosition {
+  position: absolute;
+  top: 96px;
+  right: 96px;
+}
+
+.linkStyle {
+  color: #fff;
 }
