@@ -1,7 +1,7 @@
 import * as React from "react"
 import type { HeadFC } from "gatsby"
 import Tag from "../components/Tag"
-import telegram from "../images/telegram.jpg"
+import telegram from "../images/telegram.png"
 
 const pageStyles = {
   color: "#fff",
@@ -130,7 +130,11 @@ const IndexPage = () => {
         <h1>{title.name}</h1>
         <p>{title.jobTitle}</p>
         <img src="https://avatars.githubusercontent.com/u/10922478?s=200" alt="Polina's photo"/>
-        <img src={telegram} alt="telegram qr code" width="150px" style={telegramPosition} />
+        <div style={telegramPosition}>
+          <img src={telegram} alt="telegram qr code" width="150px"/><br/>
+          <a target="_blank" style={linkStyle} href="https://t.me/PaulinaLappo">@PaulinaLappo</a>
+        </div>
+        
       </div>
       <section style={paddingLeft}>
         <h3 style={sectionStyles}><span style={blueColorStyle}>.</span>{aboutMe.title}</h3>
