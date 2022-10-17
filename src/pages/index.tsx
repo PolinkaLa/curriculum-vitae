@@ -8,15 +8,17 @@ const IndexPage = () => {
   return (
     <main className="pageStyles">
       <Tag tag="cv" open="true" />
-      <div className="paddingLeft">
-        <h1>{TITLE.name}</h1>
-        <p>{TITLE.jobTitle}</p>
-        <img src="https://avatars.githubusercontent.com/u/10922478?s=200" alt="Polina's photo"/>
+      <header className="paddingLeft">
+        <div>
+          <h1>{TITLE.name}</h1>
+          <p>{TITLE.jobTitle}</p>
+          <img src="https://avatars.githubusercontent.com/u/10922478?s=200" alt="Polina's photo" width="200px"/>
+        </div>
         <div className="telegramPosition">
           <img src={telegram} alt="telegram qr code" width="150px"/><br/>
           <a target="_blank" className="linkStyle" href="https://t.me/PaulinaLappo">@PaulinaLappo</a>
         </div>
-      </div>
+      </header>
       <section className="paddingLeft">
         <h3 className="sectionStyles"><span className="blueColorStyle">.</span>{ABOUT_ME.title}</h3>
         <p className="paddingLeft">{ABOUT_ME.description}</p>

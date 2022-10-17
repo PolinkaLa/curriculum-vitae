@@ -25,13 +25,34 @@ body,
 .paddingLeft {
   padding-left: 40px;
 }
-
-.telegramPosition {
-  position: absolute;
-  top: 96px;
-  right: 96px;
+header {
+  display: flex;
+  justify-content: space-between;
 }
 
 .linkStyle {
   color: #fff;
+}
+
+@media (max-width: 1200px) { 
+  .pageStyles {
+    padding: 50px;
+  }
+}
+@media (max-width: 700px) { 
+  .pageStyles {
+    padding: 25px;
+  }
+  .paddingLeft {
+    padding-left: 20px;
+  }
+  header {
+    flex-direction: column;
+  }
+  .telegramPosition {
+    order: -1;
+  }
+  .telegramPosition img {
+    width: 100px;
+  }
 }
