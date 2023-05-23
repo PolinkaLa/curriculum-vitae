@@ -6,7 +6,7 @@ export const TITLE = {
 export const ABOUT_ME = {
   title: "about_me",
   description:
-    "Применяю различные технологии в небольших pet-проектах, а еще сама набрасываю для этих проектов небольшой дизайн в Figma. Повышаю свою квалификацию, проходя различные курсы и смотря онлайн митапы и конференции. Долгое время работала со специфичным фреймворком SAP UI5. Сейчас хочу приобрести коммерческий опыт работы с популярными JS-фреймворками и разрабатывать на них большие и полезные приложения.",
+    "Применяю различные технологии в небольших pet-проектах, а еще сама набрасываю для этих проектов небольшой дизайн в Figma. Повышаю свою квалификацию, проходя различные курсы и смотря онлайн митапы и конференции. Долгое время работала со специфичными фреймворками SAP UI5 и Mithril.js. Сейчас хочу приобрести коммерческий опыт работы с популярными JS-фреймворками и разрабатывать на них большие и полезные приложения.",
 };
 
 export const EDUCATION = {
@@ -40,6 +40,10 @@ export const COURSES = {
     {
       year: "2022",
       name: "Udemy, TypeScript с нуля - от основ до advanced уровня",
+    },
+    {
+      year: "2023",
+      name: "Agile и Scrum в работе над проектами и продуктами",
     },
   ],
 };
@@ -81,6 +85,11 @@ export const WORK_EXPERIENCE = {
       title: "Frontend разработчик",
       company: "ООО «Софтверке»",
     },
+    {
+      period: "Октябрь 2022 — по настоящее время",
+      title: "Frontend разработчик",
+      company: "Группа компаний «Рубеж» -> ООО «Р-Софт»",
+    },
   ],
 };
 
@@ -99,10 +108,14 @@ export const LINKS = {
       title: "Сертификат - TypeScript с нуля - от основ до advanced уровня",
       url: "https://www.udemy.com/certificate/UC-53fbc370-486a-4c7a-a53b-8c6bdea4066e/",
     },
+    {
+      title: "Сертификат - Agile и Scrum в работе над проектами и продуктами.",
+      url: "https://scrumtrek.online/g/37900138744/5758aa82?v=5nGcuMzYmFGZzIGMzEWZ2EDM0cTN1Y2N0YTMzIzNlRmN0Q2Mvg2L3MTMvM2cvATOxIzMvE2LkF2bs52dvR2LlxWam9SZjlmdyV2clxWam9Sdy5SZzJXdvNGdldmLzZ2LvoDc0RHa",
+    },
   ],
 };
 
 export const SKILLS = {
   title: "skills",
-  description: "JavaScript, HTML, CSS, Less, Git, React, Figma, WordPress",
+  description: "JavaScript, HTML, CSS, Less, Git, Figma",
 };
