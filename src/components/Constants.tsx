@@ -26,12 +26,8 @@ export const COURSES = {
   title: "courses",
   description: [
     {
-      year: "2018",
-      name: "Центр бизнес-образования проектного менеджмента, Гибкие методологии управления проектами",
-    },
-    {
-      year: "2019",
-      name: "Geekbrains, Javascript разработчик",
+      year: "2023",
+      name: "Agile и Scrum в работе над проектами и продуктами",
     },
     {
       year: "2022",
@@ -42,8 +38,12 @@ export const COURSES = {
       name: "Udemy, TypeScript с нуля - от основ до advanced уровня",
     },
     {
-      year: "2023",
-      name: "Agile и Scrum в работе над проектами и продуктами",
+      year: "2019",
+      name: "Geekbrains, Javascript разработчик",
+    },
+    {
+      year: "2018",
+      name: "Центр бизнес-образования проектного менеджмента, Гибкие методологии управления проектами",
     },
   ],
 };
@@ -66,13 +66,13 @@ export const WORK_EXPERIENCE = {
   title: "work_experience",
   description: [
     {
-      period: "Июль 2016 — январь 2018",
-      title: "Системный аналитик",
-      company: "ООО «Софтверке»",
+      period: "Октябрь 2022 — по настоящее время",
+      title: "Frontend разработчик",
+      company: "Группа компаний «Рубеж»",
     },
     {
-      period: "Январь 2018 — Апрель 2019",
-      title: "Инженер-программист",
+      period: "Май 2022 — Июнь 2022",
+      title: "Frontend разработчик",
       company: "ООО «Софтверке»",
     },
     {
@@ -81,14 +81,14 @@ export const WORK_EXPERIENCE = {
       company: "ООО «Софтверке»",
     },
     {
-      period: "Май 2022 — Июнь 2022",
-      title: "Frontend разработчик",
+      period: "Январь 2018 — Апрель 2019",
+      title: "Инженер-программист",
       company: "ООО «Софтверке»",
     },
     {
-      period: "Октябрь 2022 — по настоящее время",
-      title: "Frontend разработчик",
-      company: "Группа компаний «Рубеж»",
+      period: "Июль 2016 — январь 2018",
+      title: "Системный аналитик",
+      company: "ООО «Софтверке»",
     },
   ],
 };
